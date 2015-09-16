@@ -26,6 +26,15 @@ A simple example named BlinkBeep is provided.
  * The actual frequency will always be lower
  * Can become erratic if long-running functions prevent **Pulse::loop()** from being run on time. However, this can be addressed by calling **Pulse::loop()** from within those functions.)
 
+# Installation
+From the command line, go to your **sketchbook** folder. Inside is a folder named **libraries** (if not, create it). **cd** to the **sketchbook\libraries** folder, and if there is no other library named **Pulse** in that folder, run the following command:
+
+`$ git clone https://github.com/phonedeveloper/Pulse.git`
+
+This will install the Pulse library and some examples. Restart the Arduino development environment to see them.
+
+You will also need to install the Actions library. See https://github.com/phonedeveloper/Actions/README.md for instructions.
+
 # Example Sketches
 The following examples are provided (in the library's **examples** folder, and accessible via the Arduino IDE's ***File | Examples*** menu:
 
@@ -97,9 +106,14 @@ The examples below assume that an instance of **Pulse** named ```blink``` is cre
 #include <Pulse.h>
 ```
 
-### Constuctor:
+### Constuctor examples:
 ```
-Pulse blink(delay=500, pin=13, dutyCycle=50);
+// Pulse::Pulse(delay=500, pin=13, dutyCycle=50)
+Pulse blink;              // defaults (above)
+Pulse blink(1000);        // 1 second pulse cycle
+Pulse blink(1000, 3);     // use pin 3
+Pulse blink(1000, 3, 25); // use 25% duty cycle
+
 ```
 where
 
