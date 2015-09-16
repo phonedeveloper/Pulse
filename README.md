@@ -9,7 +9,7 @@ Since **Pulse** depends on being called frequently in your sketch's **loop()**, 
 
 Requires the **Actions** library at https://github.com/phonedeveloper/Actions
 
-A simple example named BlinkBeep is provided.
+Examples **BlinkBeep** and **AlarmSound** are provided.
 
 ## Benefits
  * Is very easy to use
