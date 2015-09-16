@@ -24,7 +24,7 @@ Examples **BlinkBeep** and **AlarmSound** are provided.
  * It is not small by itself, but if you are already using the **Actions** library elsewhere in your sketch, the incremental increase is quite small
  * Is only as accurate as how often Pulse::loop() is called
  * The actual frequency will always be lower
- * Can become erratic if long-running functions prevent **Pulse::loop()** from being run on time. However, this can be addressed by calling **Pulse::loop()** from within those functions.)
+ * Can become erratic if long-running functions prevent **Pulse::loop()** from being run on time. However, this can be addressed by calling **Pulse::loop()** from within those functions.
 
 # Installation
 From the command line, go to your **sketchbook** folder. Inside is a folder named **libraries** (if not, create it). **cd** to the **sketchbook\libraries** folder, and if there is no other library named **Pulse** in that folder, run the following command:
